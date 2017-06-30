@@ -1,0 +1,23 @@
+{
+    "name": "ph-7/dating-affiliate-tools",
+    "description": "Useful and Powerful tools to increase/boost easily your Affiliate Programs.",
+    "keywords": ["affiliate","tools","register","the adult company","edenflirt","affiliate program","affiliate commission"],
+    "type": "library",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Pierre-Henry Soria",
+            "email": "me@ph7.me",
+            "homepage": "http://ph7.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DAT\\TAC\\": "src"
+        }
+    }
+}
