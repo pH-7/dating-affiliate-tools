@@ -22,16 +22,16 @@
 ```php
 use DAT\Service\Identifier\Affiliate as AffiliateId;
 use DAT\Tools\Client\Registration;
-use DAT\Service\TAC\Edenflirt;
+use DAT\Service\TAC\EveFlirt;
 
 $aData = [
     // user data to send to the affiliate platform
 ];
 
 $oAffiliateId = new AffiliateId('<YOUR_AFFILIATE_ID>');
-$oEdenflirt = new Edenflirt($oAffiliateId);
+$oEveFlirt = new EveFlirt($oAffiliateId);
 
-$oRegister new Registration($oEdenflirt, $aData);
+$oRegister new Registration($oEveFlirt, $aData);
 $oRegister->random(); // Optional. Sets the registration niche random
 $oRegister->send();
 ```

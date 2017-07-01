@@ -10,7 +10,7 @@ namespace DAT\Service\Provicer\TAC;
 use DAT\Service\Identifier\Affiliate as AffiliateId;
 use DAT\Service\Provider\Providable;
 
-class Edenflirt implements Providable
+class EveFlirt implements Providable
 {
     const FORM_URL = 'http://';
 
