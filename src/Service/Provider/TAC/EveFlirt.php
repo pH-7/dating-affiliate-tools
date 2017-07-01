@@ -5,7 +5,7 @@
  * @license        GNU General Public License; <https://www.gnu.org/licenses/gpl-3.0.en.html>
  */
 
-namespace DAT\Service\Provicer\TAC;
+namespace DAT\Service\Provider\TAC;
 
 use DAT\Service\Identifier\Affiliate as AffiliateId;
 use DAT\Service\Provider\Providable;
