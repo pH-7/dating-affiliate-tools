@@ -13,6 +13,11 @@ use DAT\Service\Provider\Providable;
 class EveFlirt implements Providable
 {
     const FORM_URL = 'http://';
+    const FORM_ACTION_URI = '/register/';
+
+    const EMAIL_FIELD = '';
+    const USERNAME_FIELD = '';
+    const NAME_FIELD = '';
 
     /** @var Affiliate */
     private $affiliateId;
@@ -25,8 +30,19 @@ class EveFlirt implements Providable
         $this->affiliateId = $affiliateId;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public function getUrl()
     {
         return self::FORM_URL . $this->affiliateId->getValue();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getFormAction()
+    {
+        return self::FORM_ACTION_URI;
     }
 }

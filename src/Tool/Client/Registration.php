@@ -9,40 +9,41 @@ namespace DAT\Tool\Client;
 
 use PH7\External\Http\Client\PH7Client;
 use DAT\Service\Provider\Providable;
+use InvalidArgumentException;
 
 class Registration implements Registrable
 {
+    /** @var PH7Client */
+    private $httpClient;
+
+    /** @var Providable */
+    private $provider;
+
+    /** @var array */
+    private $userData;
+
     /**
      * @param Providable $provider
      * @param array
      */
     public function __construct(Providable $provider, array $aData)
     {
-        $oPH7CMSApi = new PH7Client($provider->getUrl());
+        $this->userData = $aData;
+        $this->provider = $provider;
+        $this->httpClient = new PH7Client($this->provider->getUrl());
+
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public function send()
     {
-        /***** Log a user *****/
-        $aLogin = [
-            'identity' => $sUser,
-            'password' => $sPass,
-            'remember' => 'on',
-            'submit' => 'Login'
-        ];
-
-    // Login the user
-        $oPH7CMSApi->post($sReauest1, $aLogin);
-    // Submit the form
-        $oPH7CMSApi->send();
-
-
-        /***** Send a message *****/
-        $aMsg = ['message' => $sBody];
-
-    // Send the message
-        $oPH7CMSApi->post($sRequest2, ['message' => $sBody])->setHeader(false)->send();
-
-        echo $oPH7CMSApi->getResponse(); // Will show the sucessful message telling you that your msg has been send
+        try {
+            $this->httpClient->post($this->provider->getFormAction(), $this->userData);
+            $this->httpClient->send();
+        } catch (InvalidArgumentException $e) {
+            //TODO: Add monolog here
+        }
     }
 }
