@@ -12,12 +12,13 @@ use DAT\Service\Provider\Providable;
 
 class EveFlirt implements Providable
 {
-    const FORM_URL = 'http://';
-    const FORM_ACTION_URI = '/register/';
+    const FORM_URL = 'https://www.idilys.com';
+    const FORM_ACTION_URI = 'loginSubmit/?cf0=&cf1=P13&degree=soft';
 
-    const EMAIL_FIELD = '';
-    const USERNAME_FIELD = '';
-    const NAME_FIELD = '';
+    const EMAIL_FIELD = 'account[email]';
+    const USERNAME_FIELD = 'account[profile][nickname]';
+    const NAME_FIELD = 'account[profile][name]';
+    const PASSWORD_FIELD = 'account[password]';
 
     /** @var Affiliate */
     private $affiliateId;
@@ -35,7 +36,7 @@ class EveFlirt implements Providable
      */
     public function getUrl()
     {
-        return self::FORM_URL . $this->affiliateId->getValue();
+        return self::FORM_URL . '&comfrom=' . $this->affiliateId->getValue();
     }
 
     /**
