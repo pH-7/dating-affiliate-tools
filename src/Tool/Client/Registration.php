@@ -42,8 +42,11 @@ class Registration implements Registrable
         try {
             $this->httpClient->post($this->provider->getFormAction(), $this->userData);
             $this->httpClient->send();
+
+            return true;
         } catch (InvalidArgumentException $e) {
             //TODO: Add monolog here
+            return false;
         }
     }
 }

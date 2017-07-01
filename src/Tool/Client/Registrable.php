@@ -10,7 +10,7 @@ namespace DAT\Tool\Client;
 interface Registrable
 {
     /**
-     * @return void
+     * @return bool
      */
     public function send();
 }
