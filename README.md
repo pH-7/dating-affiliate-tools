@@ -39,9 +39,9 @@ $oRegister->send();
 
 ## Requirements
 
-* PHP 5.6 or higher
+* [PHP 5.6](http://php.net) or higher
 * [Composer](https://getcomposer.org)
-* cURL PHP library
+* [cURL PHP](http://php.net/manual/en/book.curl.php) library
 
 ##  Installation
 
@@ -64,11 +64,12 @@ composer require ph-7/dating-affiliate-tools`
 
 ## Disclaimer
 
+*The purpose of those tools is to help webmasters and affiliate programs to increase their revenue, but the DAT tools (Dating Affiliate Tools) have to be used only if their usage respect the affiliate platform's terms.*
+
 You CANNOT use this library against the TOS of the services present in this library.
+There are there as an example, and it is your responsability to check the up-to-date TOS and/or speak to your affiliate manager of the affiliate program(s) to see if you can use those tools.
 
-There are there as an example, but it is your responsability to check the up-to-date TOS and/or speak to your affiliate manager of the affiliate program(s).
-
-YOU are fully responsible of the usage of it and YOU CANNOT use it illegally or against those Web services. This present library (Dating-Affiliation-Tools / DAT) and myself (the present author) cannot in any case be responsible of the usage you make with it.
+YOU are fully responsible of the usage of it and YOU CANNOT use it illegally or against those Web services. This present library (Dating-Affiliation-Tools / DAT) and myself (the present author) cannot be in any case responsible of the usage you make with it.
 
 
 ## License
