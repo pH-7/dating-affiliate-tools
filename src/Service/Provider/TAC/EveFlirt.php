@@ -15,7 +15,7 @@ class EveFlirt implements Providable
     const MAX_PASSWORD_LENGTH = 8;
 
     const FORM_URL = 'https://www.idilys.com';
-    const FORM_ACTION_URI = 'loginSubmit/?cf0=&cf1=P13&degree=soft';
+    const FORM_ACTION_URI = 'login/registerProcess/?cf0=&cf1=P13&degree=soft';
 
     const EMAIL_FIELD = 'account[email]';
     const USERNAME_FIELD = 'account[profile][nickname]';
