@@ -5,7 +5,7 @@
  * @license        GNU General Public License; <https://www.gnu.org/licenses/gpl-3.0.en.html>
  */
 
-namespace DAT\Tests\Service\Provicer\TAC;
+namespace DAT\Tests\Service\Provider\TAC;
 
 use DAT\Service\Identifier\Affiliate;
 use DAT\Service\Provider\TAC\EveFlirt;
