@@ -21,8 +21,8 @@
 2. Backend code. When the user submit the form
 ```php
 use DAT\Service\Identifier\Affiliate as AffiliateId;
-use DAT\Tools\Client\Registration;
-use DAT\Service\TAC\EveFlirt;
+use DAT\Tool\Client\Registration;
+use DAT\Service\Provider\TAC\EveFlirt;
 
 $aData = [
     // user data to send to the affiliate platform
