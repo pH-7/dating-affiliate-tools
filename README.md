@@ -52,7 +52,7 @@ composer require ph-7/dating-affiliate-tools`
  ```
  
  
-## Who Am I?
+## Who I Am?
 
 **[Pierre-Henry Soria](http://ph7.me)**, a passionate software engineer and creator of [pH7CMS](https://github.com/pH7Software/pH7-Social-Dating-CMS) for instance.
 
