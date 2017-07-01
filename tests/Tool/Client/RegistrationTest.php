@@ -38,7 +38,7 @@ class RegistrationTest extends PHPUnit_Framework_TestCase
         return [
             EveFlirt::EMAIL_FIELD => 'pierrehenrysoria@ph7.me',
             EveFlirt::USERNAME_FIELD => 'pierreS',
-            EveFlirt::NAME_FIELD => 'Pierre',
+            EveFlirt::FIRSTNAME_FIELD => 'Pierre',
             EveFlirt::PASSWORD_FIELD => '12345Hello'
         ];
     }
