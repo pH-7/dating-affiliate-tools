@@ -7,10 +7,10 @@
 
 namespace DAT\Tests\Service\Identifier;
 
-use PHPUnit\Framework\TestCase;
 use DAT\Service\Identifier\Affiliate;
+use PHPUnit_Framework_TestCase;
 
-class AffiliateTest extends TestCase
+class AffiliateTest extends PHPUnit_Framework_TestCase
 {
     public function testValidValue()
     {
