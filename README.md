@@ -62,6 +62,15 @@ composer require ph-7/dating-affiliate-tools`
 *pierrehenrysoria+github [[AT]] gmail [[D0T]] com*
 
 
+## Disclaimer
+
+You CANNOT use this library against the TOS of the services present in this library.
+
+There are there as an example, but it is your responsability to check the up-to-date TOS and/or speak to your affiliate manager of the affiliate program(s).
+
+YOU are fully responsible of the usage of it and YOU CANNOT use it illegally or against those Web services. This present library (Dating-Affiliation-Tools / DAT) and myself (the present author) cannot in any case be responsible of the usage you make with it.
+
+
 ## License
 
 Under [General Public License 3](http://www.gnu.org/licenses/gpl.html) or later.
