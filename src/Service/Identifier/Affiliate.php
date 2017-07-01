@@ -9,6 +9,8 @@ namespace DAT\Service\Identifier;
 
 class Affiliate
 {
+    const MIN_AFFILIATE_ID_LENGTH = 2;
+
     /** @var int|string */
     private $affiliateId;
 
@@ -19,7 +21,7 @@ class Affiliate
      */
     public function __construct($affiliateId)
     {
-        if (empty($affiliateId)) {
+        if (empty($affiliateId) || strlen($affiliateId) < self::MIN_AFFILIATE_ID_LENGTH) {
             throw new InvalidAffiliateIdException('The affiliate ID is invalid');
         }
 

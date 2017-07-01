@@ -19,10 +19,26 @@ class AffiliateTest extends TestCase
     }
 
     /**
+     * @param int $affiliateId
+     *
+     * @dataProvider invalidAffiliateIdsProvider
      * @expectedException \DAT\Service\Identifier\InvalidAffiliateIdException
      */
-    public function testInvalidValue()
+    public function testInvalidValue($affiliateId)
     {
-        new Affiliate('');
+        new Affiliate($affiliateId);
     }
+
+    /**
+     * @return array
+     */
+    public function invalidAffiliateIdsProvider()
+    {
+        return [
+            [''],
+            [1],
+            ['a']
+        ];
+    }
+
 }
