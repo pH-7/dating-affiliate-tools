@@ -1,6 +1,40 @@
 # Dating Affiliate Tools (DAT)
 
-Useful and Powerful tools to increase/boost easily your Affiliate Programs.
+*Simple, Useful and Powerful tools to increase/boost easily your Affiliate Programs.*
+
+#### Is it difficult and painful to get more traction/users to the affiliates services you promote on your website?
+
+#### You tried to display affiliate banners, but the conversion rates is really poor?
+
+#### What you really need is a simple way to get affiliate commissions in the same time than a simple action on your website. Users will be much likely to use the affiliate service. The users won't leave your website's page (unlike clicking on affiliate banners) and you won't have more work to do..
+
+#### **DAT Registration** tool is just a simple piece of code to add on any registration forms asking (with a input checkbox field) if they also want to be registered on a "friend" partner service to increase the chance of solving their problem (like dating someone for a dating service).
+
+### How DAT Works?
+
+1. Frontend code. On the registration form
+```html
+<input type="checkbox" name="register_to_partner" />
+```
+
+
+2. Backend code. When the user submit the form
+```php
+use DAT\Service\Identifier\Affiliate as AffiliateId;
+use DAT\Tools\Client\Registration;
+use DAT\Service\TAC\Edenflirt;
+
+$aData = [
+    // user data to send to the affiliate platform
+];
+
+$oAffiliateId = new AffiliateId('<YOUR_AFFILIATE_ID>');
+$oEdenflirt = new Edenflirt($oAffiliateId);
+
+$oRegister new Registration($oEdenflirt, $aData);
+$oRegister->random(); // Optional. Sets the registration niche random
+$oRegister->send();
+```
 
 
 ## Requirements
