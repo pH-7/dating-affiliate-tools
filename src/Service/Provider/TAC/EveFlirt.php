@@ -14,8 +14,8 @@ class EveFlirt implements Providable
 {
     const MAX_PASSWORD_LENGTH = 8;
 
-    const FORM_URL = 'https://www.idilys.com';
-    const FORM_ACTION_URI = 'login/registerProcess/?cf0=&cf1=P13&degree=soft';
+    const FORM_URL = 'http://love-rencontre.wekiss.net';
+    const FORM_ACTION_URI = 'login/registerProcess/';
 
     const PLATFORM_FIELD = 'account[created_from]';
     const TOS_FIELD = 'account[cgv]';
@@ -55,6 +55,6 @@ class EveFlirt implements Providable
      */
     public function getFormAction()
     {
-        return self::FORM_ACTION_URI . '&comfrom=' . $this->affiliateId->getValue();
+        return self::FORM_ACTION_URI . '?comfrom=' . $this->affiliateId->getValue();
     }
 }
