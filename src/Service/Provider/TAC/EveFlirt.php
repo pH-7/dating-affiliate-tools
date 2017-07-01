@@ -12,6 +12,8 @@ use DAT\Service\Provider\Providable;
 
 class EveFlirt implements Providable
 {
+    const MAX_PASSWORD_LENGTH = 8;
+
     const FORM_URL = 'https://www.idilys.com';
     const FORM_ACTION_URI = 'loginSubmit/?cf0=&cf1=P13&degree=soft';
 
