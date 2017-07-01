@@ -17,10 +17,19 @@ class EveFlirt implements Providable
     const FORM_URL = 'https://www.idilys.com';
     const FORM_ACTION_URI = 'login/registerProcess/?cf0=&cf1=P13&degree=soft';
 
+    const PLATFORM_FIELD = 'account[created_from]';
+    const TOS_FIELD = 'account[cgv]';
     const EMAIL_FIELD = 'account[email]';
     const USERNAME_FIELD = 'account[profile][nickname]';
-    const NAME_FIELD = 'account[profile][name]';
+    const FIRSTNAME_FIELD = 'account[profile][firstname]';
+    const GENDER_FIELD = 'account[profile][sex]';
     const PASSWORD_FIELD = 'account[password]';
+    const BIRTH_DAY_FIELD = 'account[profile][birthday][day]';
+    const BIRTH_MONTH_FIELD = 'account[profile][birthday][month]';
+    const BIRTH_YEAR_FIELD = 'account[profile][birthday][year]';
+    const COUNTRY_FIELD = 'account[profile][country]';
+    const CITY_FIELD = 'account[profile][city]';
+    const POSTALCODE_FIELD = 'account[profile][postal_code]';
 
     /** @var Affiliate */
     private $affiliateId;
