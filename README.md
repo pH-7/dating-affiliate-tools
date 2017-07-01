@@ -1,6 +1,6 @@
 # Dating Affiliate Tools (DAT)
 
-*Simple, Useful and Powerful tools to increase/boost easily your Affiliate Programs.*
+*DAT is a Useful and Powerful affiliate tools to increase/boost easily your Affiliate Programs.*
 
 #### Is it difficult and painful to get more traction/users to the affiliates services you promote on your website?
 
