@@ -38,7 +38,7 @@ class EveFlirt implements Providable
      */
     public function getUrl()
     {
-        return self::FORM_URL . '&comfrom=' . $this->affiliateId->getValue();
+        return self::FORM_URL;
     }
 
     /**
@@ -46,6 +46,6 @@ class EveFlirt implements Providable
      */
     public function getFormAction()
     {
-        return self::FORM_ACTION_URI;
+        return self::FORM_ACTION_URI . '&comfrom=' . $this->affiliateId->getValue();
     }
 }

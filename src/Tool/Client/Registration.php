@@ -35,6 +35,15 @@ class Registration implements Registrable
     }
 
     /**
+     * @return self
+     */
+    public function random()
+    {
+        //TODO: Hasn't been implemented yet
+        return $this;
+    }
+
+    /**
      * {@inheritDoc}
      */
     public function send()
