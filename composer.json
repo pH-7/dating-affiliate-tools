@@ -3,6 +3,7 @@
     "description": "Useful and Powerful tools to increase/boost easily your Affiliate Programs.",
     "keywords": ["affiliate","tools","register","the adult company","edenflirt","affiliate program","affiliate commission"],
     "type": "library",
+    "homepage": "http://ph7cms.com/dating-business-by-steps/",
     "license": "GPL-3.0+",
     "authors": [
         {
@@ -13,11 +14,12 @@
     ],
     "require": {
         "php": ">=5.6.0",
-        "ext-curl": "*"
+        "ext-curl": "*",
+        "ph-7/ph7client": "^2.0"
     },
     "autoload": {
         "psr-4": {
-            "DAT\\TAC\\": "src"
+            "DAT\\": "src"
         }
     }
 }
