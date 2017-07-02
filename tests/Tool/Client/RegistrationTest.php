@@ -7,11 +7,11 @@
 
 namespace DAT\Tests\Tool\Client;
 
-use DAT\Tool\Client\Registration;
-use DAT\Service\Provider\TAC\EveFlirt;
 use DAT\Service\Provider\Providable;
-use PHPUnit_Framework_TestCase;
+use DAT\Service\Provider\TAC\EveFlirt;
+use DAT\Tool\Client\Registration;
 use Phake;
+use PHPUnit_Framework_TestCase;
 
 class RegistrationTest extends PHPUnit_Framework_TestCase
 {

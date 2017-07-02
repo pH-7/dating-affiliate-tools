@@ -7,9 +7,9 @@
 
 namespace DAT\Tool\Client;
 
-use PH7\External\Http\Client\PH7Client;
 use DAT\Service\Provider\Providable;
 use InvalidArgumentException;
+use PH7\External\Http\Client\PH7Client;
 
 class Registration implements Registrable
 {
