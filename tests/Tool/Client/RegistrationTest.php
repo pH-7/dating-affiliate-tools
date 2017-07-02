@@ -20,8 +20,8 @@ class RegistrationTest extends PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $oProvidableMock = Phake::mock(Providable::class);
-        $this->registrationMock = Phake::partialMock(Registration::class, $oProvidableMock, $this->getUserDataToSend());
+        $providableMock = Phake::mock(Providable::class);
+        $this->registrationMock = Phake::partialMock(Registration::class, $providableMock, $this->getUserDataToSend());
     }
 
     public function testSend()
