@@ -27,11 +27,11 @@ class EveFlirtTest extends PHPUnit_Framework_TestCase
 
     public function testUrl()
     {
-        $this->assertSame('https://www.idilys.com', $this->everFlirt->getUrl());
+        $this->assertSame('http://love-rencontre.wekiss.net', $this->everFlirt->getUrl());
     }
 
     public function testFormAction()
     {
-        $this->assertSame('login/registerProcess/?cf0=&cf1=P13&degree=soft&comfrom=123', $this->everFlirt->getFormAction());
+        $this->assertSame('login/registerProcess/?comfrom=123', $this->everFlirt->getFormAction());
     }
 }
