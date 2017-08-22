@@ -24,11 +24,11 @@ class Registration implements Registrable
 
     /**
      * @param Providable $provider
-     * @param array
+     * @param array $data
      */
-    public function __construct(Providable $provider, array $aData)
+    public function __construct(Providable $provider, array $data)
     {
-        $this->userData = $aData;
+        $this->userData = $data;
         $this->provider = $provider;
         $this->httpClient = new PH7Client($this->provider->getUrl());
 
