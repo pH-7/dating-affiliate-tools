@@ -48,7 +48,7 @@ $oRegister->send();
 * Install Composer (https://getcomposer.org)
 * Then, include it in your project:
 ```bash
-composer require ph-7/dating-affiliate-tools`
+composer require ph-7/dating-affiliate-tools
  ```
  
  
