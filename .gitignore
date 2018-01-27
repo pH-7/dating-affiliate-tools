@@ -22,5 +22,5 @@ Thumbs.db
 .DS_Store*
 ._*
 
-# PHPStorm IDE folder.
+# PHPStorm IDE folder
 /.idea

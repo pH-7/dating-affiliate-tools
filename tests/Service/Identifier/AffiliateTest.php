@@ -40,5 +40,4 @@ class AffiliateTest extends PHPUnit_Framework_TestCase
             ['a']
         ];
     }
-
 }
