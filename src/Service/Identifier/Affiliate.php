@@ -21,7 +21,7 @@ class Affiliate
      */
     public function __construct($affiliateId)
     {
-        if (empty($affiliateId) || strlen($affiliateId) < self::MIN_AFFILIATE_ID_LENGTH) {
+        if (!$this->isValid($affiliateId)) {
             throw new InvalidAffiliateIdException('The affiliate ID is invalid');
         }
 
@@ -34,5 +34,15 @@ class Affiliate
     public function getValue()
     {
         return $this->affiliateId;
+    }
+
+    /**
+     * @param int $affiliateId
+     *
+     * @return bool
+     */
+    private function isValid($affiliateId)
+    {
+        return !empty($affiliateId) && strlen($affiliateId) >= self::MIN_AFFILIATE_ID_LENGTH;
     }
 }
