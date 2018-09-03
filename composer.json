@@ -13,7 +13,7 @@
   ],
   "type": "library",
   "homepage": "http://ph7cms.com/dating-business-by-steps/",
-  "license": "GPL-3.0+",
+  "license": "GPL-3.0-or-later",
   "authors": [
     {
       "name": "Pierre-Henry Soria",
