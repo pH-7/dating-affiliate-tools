@@ -10,30 +10,33 @@
 
 #### **DAT Registration** tool is just a simple piece of code to add on any registration forms asking (with a input checkbox field) if they also want to be registered on a "friend" partner service to increase the chance of solving their problem (like dating someone for a dating service).
 
-### How DAT Works?
 
-1. Frontend code. On the registration form
+## How DAT Works?
+
+1. Frontend code. On your POST registration form
 ```html
-<input type="checkbox" name="register_to_partner" />
+<input type="checkbox" name="register_to_partner" value="1" />
 ```
-
 
 2. Backend code. When the user submit the form
 ```php
 use DAT\Service\Identifier\Affiliate as AffiliateId;
-use DAT\Tool\Client\Registration;
 use DAT\Service\Provider\TAC\EveFlirt;
+use DAT\Tool\Client\Registration;
 
-$aData = [
-    // user data to send to the affiliate platform
-];
+if (!empty($_POST['register_to_partner'])) {
+    // if user consented it
+    $aData = [
+        // user data to send to the affiliate platform
+    ];
 
-$oAffiliateId = new AffiliateId('<YOUR_AFFILIATE_ID>');
-$oEveFlirt = new EveFlirt($oAffiliateId);
+    $oAffiliateId = new AffiliateId('<YOUR_AFFILIATE_ID>');
+    $oEveFlirt = new EveFlirt($oAffiliateId);
 
-$oRegister new Registration($oEveFlirt, $aData);
-$oRegister->random(); // Optional. Sets the registration niche random
-$oRegister->send();
+    $oRegister = new Registration($oEveFlirt, $aData);
+    $oRegister->random(); // Optional. Sets the registration niche random
+    $oRegister->send();
+}
 ```
 
 
@@ -43,15 +46,16 @@ $oRegister->send();
 * [Composer](https://getcomposer.org)
 * [cURL PHP](http://php.net/manual/en/book.curl.php) library
 
-##  Installation
+
+## Installation
 
 * Install Composer (https://getcomposer.org)
 * Then, include it in your project:
 ```bash
 composer require ph-7/dating-affiliate-tools
  ```
- 
- 
+
+
 ## Who I Am?
 
 **[Pierre-Henry Soria](http://ph7.me)**, a passionate software engineer and creator of [pH7CMS](https://github.com/pH7Software/pH7-Social-Dating-CMS), for instance.
