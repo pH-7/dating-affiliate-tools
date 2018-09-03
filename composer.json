@@ -1,29 +1,38 @@
 {
-    "name": "ph-7/dating-affiliate-tools",
-    "description": "Useful and Powerful tools to increase/boost easily your Affiliate Programs.",
-    "keywords": ["affiliate","tools","register","the adult company","edenflirt","eveflirt","affiliate program","affiliate commission"],
-    "type": "library",
-    "homepage": "http://ph7cms.com/dating-business-by-steps/",
-    "license": "GPL-3.0+",
-    "authors": [
-        {
-            "name": "Pierre-Henry Soria",
-            "email": "me@ph7.me",
-            "homepage": "http://ph7.me"
-        }
-    ],
-    "require": {
-        "php": ">=5.6.0",
-        "ext-curl": "*",
-        "ph-7/ph7client": "^2.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^5.7",
-        "phake/phake": "^2.3"
-    },
-    "autoload": {
-        "psr-4": {
-            "DAT\\": "src"
-        }
+  "name": "ph-7/dating-affiliate-tools",
+  "description": "Useful and Powerful tools to increase/boost easily your Affiliate Programs.",
+  "keywords": [
+    "affiliate",
+    "tools",
+    "register",
+    "the adult company",
+    "edenflirt",
+    "eveflirt",
+    "affiliate program",
+    "affiliate commission"
+  ],
+  "type": "library",
+  "homepage": "http://ph7cms.com/dating-business-by-steps/",
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "Pierre-Henry Soria",
+      "email": "me@ph7.me",
+      "homepage": "http://ph7.me"
     }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "ext-curl": "*",
+    "ph-7/ph7client": "^2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7",
+    "phake/phake": "^2.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "DAT\\": "src"
+    }
+  }
 }
