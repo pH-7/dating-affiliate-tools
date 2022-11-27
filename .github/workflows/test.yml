@@ -48,5 +48,5 @@ jobs:
         run: composer install --prefer-dist --no-interaction --no-progress --no-suggest
 
 
-      - name: Run Unit Test
+      - name: Run Test Suite
         run: composer test
